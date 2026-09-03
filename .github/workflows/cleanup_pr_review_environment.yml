@@ -30,7 +30,7 @@ jobs:
           revoke_token: true
 
       - name: Mark environments as inactive in GitHub
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ steps.temp_token.outputs.token }}
           script: |

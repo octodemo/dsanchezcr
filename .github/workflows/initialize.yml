@@ -28,7 +28,7 @@ jobs:
           filename: .github/issues/rating-feature-issue.md
 
       - name: Add Design Team Comment
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -46,7 +46,7 @@ jobs:
             })
 
       - name: Add Product Owner Comment
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -69,7 +69,7 @@ jobs:
           revoke_token: true
 
       - name: Update Secret Scanning Push Protection Rule
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ steps.temp_token.outputs.token }}
           script: |
