@@ -123,7 +123,7 @@ jobs:
         working-directory: ${{ env.COVERAGE_REPORT_DIRECTORY }}
 
       - name: Add Coverage PR Comment
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           recreate: true
           path: ${{ env.COVERAGE_REPORT_DIRECTORY }}/Summary.md
